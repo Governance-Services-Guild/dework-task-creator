@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class='cardstop'>GSG Dework Task Creator</div>
+    <article>  
+        <div class='main'>  
+            <form class='testing'>
+                <div class = 'form2'>
+                </div>
+            </form> 
+        <form class='testing'>
+            <!-- <div class = 'form'>
+                <label class = 'custom-field2' for='name'>
+                <select class = 'dropd' id = 'name'>
+                    <option value='Nori Nishigaya' selected>Nori Nishigaya</option>
+                    <option value='Nadim Karam'>Nadim Karam</option>
+                    <option value='JP'>JP</option>
+                    <option value='Peter Wolcott'>Peter Wolcott</option>
+                    <option value='Felix Weber'>Felix Weber</option>
+                    <option value='Stephen Whitenstall'>Stephen Whitenstall</option>
+                    <option value='Tevo Saks'>Tevo Saks</option>
+                    <option value='Vanessa Cardui'>Vanessa Cardui</option>
+                    <option value='Miroslav Rajh'>Miroslav Rajh</option>
+                    <option value='André Diamond'>André Diamond</option>
+                </select>
+                <span class="disco2">Task Creator</span>
+                </label>
+            </div> 
+            <div class = 'form'>
+                <label class = 'custom-field2' for='budgetB'>
+                <select class = 'dropd' id = 'budgetB'>
+                    <option value='Weekly meeting' selected>Weekly meeting</option>
+                    <option value='Operation'>Operation</option>
+                    <option value='Facilitate meeting'>Facilitate meeting</option>
+                    <option value='Take notes'>Take notes</option>
+                    <option value='Workshop'>Workshop</option>
+                </select>
+                <span class="disco2">Task</span>
+                </label>
+            </div> -->
+            <div class='form'>
+                <label class = 'custom-field' for='title'> 
+                <input
+                    type='text'
+                    id='title'
+                    name='title'
+                    autoComplete="off"
+                    required
+                />
+                <span class="placeholder">Title</span>
+                <span class="disco">Title</span>
+                </label>
+            </div>
+            <div class='form'>
+                <label  for='description'>
+                <textarea class = 'descr'
+                    type='text'
+                    id='description'
+                    name='description'
+                    placeholder="Description"
+                    autoComplete="off"
+                    required
+                ></textarea>
+                <!--<span class="placeholder">Description</span>
+                <span class="disco">Description / Extra comments</span>
+                </label> -->
+            </div>
+            <div class='form'>
+                <button onclick="validateSubmission();" class ='calc'>
+                    Submit
+                </button>
+                <script src="index.js"></script>
+            </div>
+        </form>
+        <form class='testing'>
+            <div class = 'form2'>
+                <h3>Tags</h3>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="operation"/>
+                <label class = 'custom-field2' for="operation">Operation</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="wMeeting"/>
+                <label class = 'custom-field2'>Weekly meeting</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="facilitate"/>
+                <label class = 'custom-field2'>Facilitate meeting</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="noteTaking"/>
+                <label class = 'custom-field2'>Note Taking</label>
+            </div>
+        </form>
+        <form class='testing'>
+            <div class = 'form2'>
+                <h3>Assignees</h3>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="nadim"/>
+                <label class = 'custom-field2'>Nadim Karam</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="miro"/>
+                <label class = 'custom-field2'>Miroslav Rajh</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="tevo"/>
+                <label class = 'custom-field2'>Tevo Saks</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="jp"/>
+                <label class = 'custom-field2'>JP</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="peter"/>
+                <label class = 'custom-field2'>Peter Wolcott</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="stephen"/>
+                <label class = 'custom-field2'>Stephen Whitenstall</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="vanessa"/>
+                <label class = 'custom-field2'>Vanessa Cardui</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="nori"/>
+                <label class = 'custom-field2'>Nori Nishigaya</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="felix"/>
+                <label class = 'custom-field2'>Felix Weber</label>
+            </div>
+            <div class = 'form2'>
+                <input type="checkbox" id="andre"/>
+                <label class = 'custom-field2'>André Diamond</label>
+            </div>
+        </form>
+        <form class='testing'>
+            <div class = 'form2'>
+            </div>
+        </form>
+        </div>
+    </article>
+        
+         <!-- We'll prepare our javascript's function for later -->
+        
+</body>
+</html>
