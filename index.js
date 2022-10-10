@@ -106,12 +106,30 @@ function assignAssignees() {
 function tagList() {
   return String(tags3)
 }
+
+function processTitle() {
+  const title = getValue('title')
+  const ada = getValue('ada')
+  const gmbl = getValue('gmbl')
+  const agix = getValue('agix')
+  let text = `${title} - Earn `
+  if (ada > 0) {
+    text = text + ada + " ada "
+  } 
+  if (gmbl > 0) {
+    text = text + gmbl + " gimbal "
+  }
+  if (agix > 0) {
+    text = text + agix + " agix "
+  }
+  return text;
+}
   
 function validateSubmission() {
     //save all the input values
   //const budgetB = getValue('budgetB')
-  const title = getValue('title')
   const description = getValue('description')
+  
   getAssignees();
   getTags()
   
@@ -128,5 +146,5 @@ ${description}
   //Generate a github link with query parameter
     
   //Open in a new tab
-  window.open(`https://github.com/Governance-Services-Guild/Project-Board/issues/` + `new?assignees=${assignAssignees()}&title=${title}&labels=${tagList()}&body=` + encodedIssueText);  
+  window.open(`https://github.com/Governance-Services-Guild/Project-Board/issues/` + `new?assignees=${assignAssignees()}&title=${processTitle()}&labels=${tagList()}&body=` + encodedIssueText);  
 }

@@ -29,10 +29,10 @@ code {
 
 .main > *:nth-child(1) {
   flex: 1 1 25%;
+  min-width: 50ch;
 }
 .main > *:nth-child(2) {
   flex: 1 1 25%;
-  min-width: 50ch;
 }
 .main > *:nth-child(3) {
   flex: 1 1 25%;
@@ -41,6 +41,9 @@ code {
   flex: 1 1 25%;
 }
 .main > *:nth-child(5) {
+  flex: 1 1 25%;
+}
+.main > *:nth-child(6) {
   flex: 1 1 25%;
 }
 
